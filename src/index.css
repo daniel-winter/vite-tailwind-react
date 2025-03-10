@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --color-pixxworkers-500: #aa6688; /* add new theme color */
+  --color-teal-500: oklch(0.88 0.09 178); /* overright color */
+}
