@@ -1,3 +1,4 @@
+@import "@kosmos/foundation/dist/css/xxxlutz/tokens.css";
 @import "tailwindcss";
 @plugin "daisyui";
 

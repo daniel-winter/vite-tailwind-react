@@ -1,12 +1,14 @@
-import { useState } from "react";
+import { useState, MouseEvent } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
+import { Button } from "@kosmos/ui-components/dist/components/Button/Button";
 import "./App.css";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  const handleOnClick = () => {
+  const handleOnClick = (event: MouseEvent) => {
+    console.log("Button clicked", event);
     const modal = document.getElementById("modal") as HTMLDialogElement;
 
     modal?.showModal();
@@ -14,6 +16,11 @@ function App() {
 
   return (
     <div>
+      <div className="logo flex justify-center mb-5">
+        <Button variant="primary" isFullWidth onClick={handleOnClick}>
+          Button from Kosmos UI
+        </Button>
+      </div>
       <div className="logo flex justify-center mb-5">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
