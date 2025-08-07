@@ -16,8 +16,8 @@ function App() {
 
   return (
     <div>
-      <div className="logo flex justify-center mb-5">
-        <Button variant="primary" isFullWidth onClick={handleOnClick}>
+      <div className="flex justify-center mb-5">
+        <Button variant="primary" onClick={handleOnClick}>
           Button from Kosmos UI
         </Button>
       </div>
