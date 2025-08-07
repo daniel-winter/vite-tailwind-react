@@ -9,12 +9,13 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "//": "ui-components version is a local deployed one, not the one from npm",
+  "//": "ui-components and foundation versions are from local deployed verdaccio, not the one from npm",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.12",
     "@tailwindcss/postcss": "^4.0.12",
     "@tailwindcss/vite": "^4.0.12",
-    "@kosmos/ui-components": "0.2.8",
+    "@kosmos/foundation": "0.5.1",
+    "@kosmos/ui-components": "0.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.3.0"

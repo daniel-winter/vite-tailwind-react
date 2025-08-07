@@ -1,6 +1,7 @@
 @import "@kosmos/foundation/dist/css/xxxlutz/tokens.css";
 @import "@kosmos/foundation/dist/css/moemax/tokens.css";
 @import "@kosmos/foundation/dist/css/moebelix/tokens.css";
+@import "@kosmos/ui-components/dist/css/output.css";
 @import "tailwindcss";
 @plugin "daisyui";
 

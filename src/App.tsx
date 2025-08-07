@@ -2,6 +2,7 @@ import { useState, MouseEvent } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import { Button } from "@kosmos/ui-components/dist/components/Button/Button";
+import { Heading } from "@kosmos/ui-components/dist/components/Heading/Heading";
 import "./App.css";
 
 function App() {
@@ -29,9 +30,12 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1 className="text-4xl text-blue-500">Vite + React</h1>
+      <Heading level={1} SEO content="Vite + React" />
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button
+          className="button primary"
+          onClick={() => setCount((count) => count + 1)}
+        >
           count is {count}
         </button>
         <p>
