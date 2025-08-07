@@ -42,16 +42,11 @@ function App() {
           Edit <code>src/App.tsx</code> and save to test HMR
         </p>
       </div>
-      <p className="typograhpy">
-        Click on the Vite and React logos to learn more
-      </p>
-
-      <button className="bg-teal-500 hover:bg-teal-700 text-white font-bold py-2 px-4 rounded ml-4 mt-4">
-        Button
-      </button>
-      <hr className="m-10" />
-      <p className="m-10">Daisy UI</p>
-      <button className="btn bg-teal-500" onClick={handleOnClick}>
+      <p className="m-10">Daisy UI example</p>
+      <button
+        className="btn bg-teal-500 hover:bg-teal-600"
+        onClick={handleOnClick}
+      >
         open modal
       </button>
       <dialog id="modal" className="modal">
