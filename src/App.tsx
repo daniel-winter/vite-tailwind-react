@@ -1,8 +1,6 @@
 import { useState, MouseEvent } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import { Button } from "@kosmos/ui-components/dist/components/Button/Button";
-import { Heading } from "@kosmos/ui-components/dist/components/Heading/Heading";
 import "./App.css";
 
 function App() {
@@ -17,11 +15,7 @@ function App() {
 
   return (
     <div>
-      <div className="flex justify-center mb-5">
-        <Button variant="primary" onClick={handleOnClick}>
-          Button from Kosmos UI
-        </Button>
-      </div>
+      <div className="flex justify-center mb-5"></div>
       <div className="logo flex justify-center mb-5">
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -30,7 +24,6 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <Heading level={1} SEO content="Vite + React" />
       <div className="card">
         <button
           className="button primary"
