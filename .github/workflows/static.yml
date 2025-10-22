@@ -28,6 +28,9 @@ jobs:
         run: |
           npm ci
           npm run build
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NEXUS_XXXLGROUP_NPM_TOKEN }}
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
