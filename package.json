@@ -9,13 +9,11 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
-  "//": "ui-components and foundation versions are from local deployed verdaccio, not the one from npm",
   "dependencies": {
     "@tailwindcss/cli": "^4.0.12",
     "@tailwindcss/postcss": "^4.0.12",
     "@tailwindcss/vite": "^4.0.12",
-    "@kosmos/foundation": "0.5.1",
-    "@kosmos/ui-components": "0.3.0",
+    "@kosmos/foundation": "0.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router": "^7.3.0"
@@ -26,7 +24,7 @@
     "@types/react-dom": "^19.0.4",
     "@vitejs/plugin-react-swc": "^3.8.0",
     "autoprefixer": "^10.4.21",
-    "daisyui": "^5.0.0",
+    "daisyui": "5.3.7",
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
