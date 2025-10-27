@@ -529,10 +529,19 @@
   }
 </script>
 <link rel="stylesheet" href="/fonts/fonts.css" />
+<div id="svg-sprite-container"></div>
+<script>
+  fetch('/icons-sprite.svg')
+    .then((response) => response.text())
+    .then((svg) => {
+      const container = document.getElementById('svg-sprite-container');
+      container.innerHTML = svg;
+    });
+</script>
 
-    <script type="module" crossorigin src="./assets/iframe-BFEqPYAy.js"></script>
+    <script type="module" crossorigin src="./assets/iframe-BNWelFxJ.js"></script>
     <link rel="modulepreload" crossorigin href="./assets/preload-helper-Dp1pzeXC.js">
-    <link rel="stylesheet" crossorigin href="./assets/iframe-B0TV9CZp.css">
+    <link rel="stylesheet" crossorigin href="./assets/iframe-BVRP6IDU.css">
   </head>
 
   <body>
