@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'XXXLutz Sans';
+  src: url('./Sans-Variable.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html body {
+  font-family: 'XXXLutz Sans', sans-serif;
+}
