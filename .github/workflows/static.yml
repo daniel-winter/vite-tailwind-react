@@ -29,6 +29,7 @@ jobs:
         run: |
           npm ci
           npm run build
+          ls -la
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NEXUS_XXXLGROUP_NPM_TOKEN }}
 
@@ -37,19 +38,12 @@ jobs:
         with:
           path: ./dist # your build output folder
 
-      - name: Upload dist
-        uses: actions/upload-artifact@v4
-        with:
-          name: dist-build
-          path: dist
-          retention-days: 1
-
   # Single deploy job since we're just deploying
   deploy:
     needs: build
     environment:
       name: github-pages
-      url: "_github-pages-challenge-daniel-winter.pixxworkers.com"
+      url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
